@@ -1,0 +1,39 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro.md
+parts:
+  - caption: Welcome to MICC
+    chapters:
+    - file: sources/1-m4d/index.md
+      sections:
+      - file: sources/1-m4d/1.account.md
+      - file: sources/1-m4d/2.ssh.md
+      - file: sources/1-m4d/3.nas.md
+      - file: sources/1-m4d/4.vpn.md
+      - file: sources/1-m4d/5.social.md
+      - file: sources/1-m4d/6.cloud.md
+  # - caption: How to MICC
+  #   chapters:
+  #   - file: sources/2-h2m/index.md
+  #     sections:
+  #       - file: sources/2-h2m/1.dream_machines.md
+  #       - file: sources/2-h2m/2.best_practice.md
+  #       - file: sources/2-h2m/3.tips.md
+  # - caption: Slurm docs
+  #   chapters:
+  #   - file: sources/3-slurm/index.md
+  #     sections:
+  #       - file: sources/3-slurm/1.example.md
+  # - caption: Containers
+  #   chapters:
+  #   - file: sources/4-cont/index.md
+  #     sections:
+  #       - file: sources/4-cont/1.docker.md
+  #       - file: sources/4-cont/2.singularity.md
+  #       - file: sources/4-cont/3.dev_cont_vscode.md
+  # - caption: Projects
+  #   chapters:
+  #   - file: sources/5-prjcts/SEARLE.md
+
