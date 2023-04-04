@@ -1,7 +1,7 @@
 # Book settings
 # Learn more at https://jupyterbook.org/customize/config.html
 
-title: MICC Book
+title: ""
 author: The sys-admin team
 logo: logoMICC.png
 
@@ -30,4 +30,3 @@ repository:
 html:
   use_issues_button: true
   use_repository_button: true
-  baseurl: "https://miccunifi.github.io"  
