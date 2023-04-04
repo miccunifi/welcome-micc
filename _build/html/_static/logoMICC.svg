@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   viewBox="0 0 375.96368 103.90031"
+   height="103.90031"
+   width="375.96368"
+   id="svg2"
+   version="1.1">
+  <metadata
+     id="metadata8">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6" />
+  <g
+     transform="translate(-14.017364,-18.233817)"
+     id="g836">
+    <path
+       style="fill:#000000"
+       d="m 14.017364,92.934542 c 0,0 1.510833,-12.896831 5.945549,-23.770157 10.787474,-26.449433 42.816738,-34.499543 68.253843,-21.618669 2.594216,1.313662 4.92369,2.388476 5.17661,2.388476 0.252919,0 1.92835,-2.5875 3.72318,-5.75 10.087134,-17.77359 31.154734,-28.432 50.312144,-25.45367 3.97802,0.61845 8.43394,1.58114 9.90204,2.13931 L 160,21.884692 v 22.904613 l -5.95212,-3.069753 C 138.95725,33.936722 122.75384,39.189952 115,54.379098 c -4.57974,8.971338 -4.63596,15.93196 -0.23695,29.336952 l 3.04595,9.000492 H 95.655968 L 93.428223,85.132587 C 90.107752,73.828644 86.116489,69.147911 75.969319,63.87708 65.792027,58.590602 50.323532,61.877386 42.501634,71.203317 39.560947,74.709453 36.329605,83.137982 35.682915,87.970123 34.954645,93.411835 35,92.934542 35,92.934542 Z"
+       id="path817" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:75.23849487px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1"
+       x="201.51744"
+       y="92.026733"
+       id="text821"><tspan
+         id="tspan819"
+         x="201.51744"
+         y="92.026733"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:Arial;-inkscape-font-specification:'Arial Bold';stroke-width:1">MICC</tspan></text>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 183.4222,19.152812 V 92.945173"
+       id="path824" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:46.69224167px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1"
+       x="12.631188"
+       y="118.20358"
+       id="text828"><tspan
+         id="tspan826"
+         x="12.631188"
+         y="118.20358"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.67689514px;font-family:Arial;-inkscape-font-specification:Arial;stroke-width:1">Media Integration and Communication Center</tspan></text>
+  </g>
+</svg>
