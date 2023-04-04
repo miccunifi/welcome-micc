@@ -1,4 +1,4 @@
-# What is this book?
+# MICC Docs
 
 This is the docs of MICC, a research center at the University of Florence, Italy. 
 
