@@ -15,5 +15,3 @@ parts:
     - file: sources/1-m4d/3.nas.md
     - file: sources/1-m4d/4.vpn.md
     - file: sources/1-m4d/5.social.md
-    - file: sources/1-m4d/6.cloud.md
-
