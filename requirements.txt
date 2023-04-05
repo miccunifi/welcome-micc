@@ -2,3 +2,4 @@ ghp-import
 jupyter-book
 matplotlib
 numpy
+sphinxcontrib.video
