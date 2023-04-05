@@ -19,12 +19,12 @@
   </script>
   
   <!-- Loaded before other Sphinx assets -->
-  <link href="../../_static/styles/theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
-<link href="../../_static/styles/bootstrap.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
-<link href="../../_static/styles/pydata-sphinx-theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
 
   
-  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
   <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
 <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
@@ -38,8 +38,8 @@
     <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
   
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d" />
-<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d" />
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -65,7 +65,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="VPN" href="4.vpn.html" />
-    <link rel="prev" title="SSH" href="2.ssh.html" />
+    <link rel="prev" title="MICC servers (Dream Machine)" href="2.ssh.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -163,11 +163,12 @@ const thebe_selector_output = ".output, .cell_output"
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Chapters</span></p>
 <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="1.account.html">Account</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2.ssh.html">SSH</a></li>
+<li class="toctree-l1"><a class="reference internal" href="2.ssh.html">MICC servers (Dream Machine)</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">NAS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="4.vpn.html">VPN</a></li>
-<li class="toctree-l1"><a class="reference internal" href="5.social.html">Social</a></li>
-<li class="toctree-l1"><a class="reference internal" href="6.cloud.html">Cloud</a></li>
+<li class="toctree-l1"><a class="reference internal" href="5.social.html">Social&lt;</a></li>
+
+
 </ul>
 
     </div>
@@ -338,9 +339,7 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</label>
+
 </div></div>
       
     </div>
@@ -356,14 +355,6 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#coming-soon">COMING SOON</a></li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -375,21 +366,20 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="nas">
 <h1>NAS<a class="headerlink" href="#nas" title="Permalink to this heading">#</a></h1>
-<p>Each server has access to some NAS (<strong><a class="reference external" href="https://it.wikipedia.org/wiki/Network_Attached_Storage">https://it.wikipedia.org/wiki/Network_Attached_Storage</a></strong>) that can be accessed through the following syntax:</p>
+<p>Each server has access to several NAS (<strong><a class="reference external" href="https://en.wikipedia.org/wiki/Network-attached_storage">https://en.wikipedia.org/wiki/Network-attached_storage</a></strong>). A NAS provides additional storage, but writing/reading data can possibly be quite slow. It is recommended to use NAS to store model checkpoints, backups and datasets.</p>
+<p>Each NAS can be accessed from every dream machine with:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span><span class="w"> </span>/&lt;NAS-name&gt;/&lt;username&gt;
 </pre></div>
 </div>
-<p>where the <code class="docutils literal notranslate"><span class="pre">&lt;NAS-name&gt;</span></code> is one of :</p>
+<p>where the <code class="docutils literal notranslate"><span class="pre">&lt;NAS-name&gt;</span></code> is one of:</p>
 <ul class="simple">
 <li><p>equilibrium</p></li>
 <li><p>andromeda</p></li>
 <li><p>fishtank</p></li>
 <li><p>oblivion</p></li>
 </ul>
-<p>With NAS you have additional storage. Please note that writing/reading data from/to NAS is slow. It is recommended to copy in the NAS checkpoints or backup data of your repos.</p>
-<p><strong>!!PLEASE DO NOT STORE DATASETS IN THE PERSONAL FOLDER!!</strong></p>
-<p>Every dataset that will be found in personal folder will be deleted.</p>
-<p>You can store your datasets in one of the following folders:</p>
+<p><strong>!! DO NOT STORE DATASETS IN YOUR PERSONAL FOLDER !!</strong></p>
+<p>Quite often multiple people use the same datasets for their research. To avoid wasting storage space with multiple copies of the same datasets, the datasets <strong>must</strong> be downloaded into the following folders:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="w"> </span>/&lt;NAS-name&gt;/DATASETS<span class="w"> </span>
 <span class="c1"># or   </span>
 /&lt;NAS-name&gt;/datasets<span class="w"> </span>
@@ -397,22 +387,16 @@ document.write(`
 /home/DATASETS
 </pre></div>
 </div>
-<section id="coming-soon">
-<h2>COMING SOON<a class="headerlink" href="#coming-soon" title="Permalink to this heading">#</a></h2>
-<p>The file which are not modified in the last 30 days will be automatically deleted from the <code class="docutils literal notranslate"><span class="pre">$HOME</span></code> directories in order to preserve the space in our folders in which are fast SSD.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+<p>Datasets located in personal folders will be deleted.</p>
+<!-- ## COMING SOON
 
-
+The file which are not modified in the last 30 days will be automatically deleted from the `$HOME` directories in order to preserve the space in our folders in which are fast SSD.
 
 This is done to avoid multiple copies of data all around our servers.
 
- \n       Another advantage that you can have using NAS is that the personal folder in the NAS is shared across all the servers. So you will see the same data from two different machines.
+> Another advantage that you can have using NAS is that the personal folder in the NAS is shared across all the servers. So you will see the same data from two different machines.
 
-For example, if you add a `foo` folder in the `/equilibrium/mbianchi` folder in the NAS when you are logged to targaryen, the folder `/equilibrium/mbianchi/foo` will exists also from the other servers.
-
-</pre></div>
-</div>
-</section>
+> For example, if you add a `foo` folder in the `/equilibrium/mbianchi` folder in the NAS when you are logged to targaryen, the folder `/equilibrium/mbianchi/foo` will exists also from the other servers. -->
 </section>
 
     <script type="text/x-thebe-config">
@@ -441,7 +425,10 @@ For example, if you add a `foo` folder in the `/equilibrium/mbianchi` folder in 
               
               
                 <footer class="bd-footer-article">
-                  <!-- Previous / next buttons -->
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
 <div class="prev-next-area">
     <a class="left-prev"
        href="2.ssh.html"
@@ -449,7 +436,7 @@ For example, if you add a `foo` folder in the `/equilibrium/mbianchi` folder in 
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">SSH</p>
+        <p class="prev-next-title">MICC servers (Dream Machine)</p>
       </div>
     </a>
     <a class="right-next"
@@ -461,31 +448,20 @@ For example, if you add a `foo` folder in the `/equilibrium/mbianchi` folder in 
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
+</div></div>
+  
 </div>
+
                 </footer>
               
             </div>
             
             
               
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#coming-soon">COMING SOON</a></li>
-</ul>
-  </nav></div>
-
-</div></div>
-              
             
           </div>
           <footer class="bd-footer-content">
-            <div class="bd-footer-content__inner">
+            
 <div class="bd-footer-content__inner container">
   
   <div class="footer-item">
@@ -515,7 +491,7 @@ By The sys-admin team
     
   </div>
   
-</div></div>
+</div>
           </footer>
         
 
@@ -524,8 +500,8 @@ By The sys-admin team
   </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d"></script>
-<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d"></script>
+  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
 
   <footer class="bd-footer">
   </footer>
